@@ -1,0 +1,24 @@
+AWS:
+  Resources:
+    SG1:
+      SG_ID: #ex: sg-06d2d106e9cb1111
+      REGION: #ex: eu-west-1
+      PORTS:
+        - 22
+        - 443
+    SG2:
+      SG_ID: #ex: sg-0cfadb89bc221112
+      REGION: #ex: eu-west-1
+      PORTS:
+        - 25
+        - 80
+        - 443
+        - 5439
+        - 5432
+        - 3306
+    SG3:
+      SG_ID: #ex: sg-492211113
+      REGION: #ex: eu-central-1
+      PORTS:
+        - 22
+        - 25

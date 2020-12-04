@@ -1,0 +1,14 @@
+[Unit]
+Description=SG Agent
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=300
+User=<HOME USER>
+ExecStart=/usr/bin/python3 /usr/bin/sg-agent.py
+
+[Install]
+WantedBy=multi-user.target
