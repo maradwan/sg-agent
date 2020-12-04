@@ -4,7 +4,7 @@ import requests
 from datetime import datetime
 from socket import gethostname
 
-with open('sg-agent-config.yaml') as f:
+with open('/etc/sg-agent-config.yaml') as f:
     sg = yaml.safe_load(f)
 
 aws_sg = sg['AWS']
