@@ -17,7 +17,7 @@ LastUpdate = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 get_ip =  requests.get('http://ifconfig.me')
 if get_ip.status_code != 200:
     get_ip = requests.get('http://ipinfo.io/ip')
-elif get_ip.status_code != 200:
+if get_ip.status_code != 200:
     get_ip = requests.get('http://api.ipify.org')
 
 # Adding Rules to SG
